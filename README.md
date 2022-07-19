@@ -1,3 +1,5 @@
-<h1 align="center">Rockeat help react-native</h1>
+<h1 align="center">Rocket help</h1>
 
-![]("../.github/Capa.png")
+![Capa projeto]("../../.github/Capa.png")
+
+
