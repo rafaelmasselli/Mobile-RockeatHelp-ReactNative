@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Heading, VStack, Icon, useTheme } from "native-base";
-import { Envelope, Key } from "phosphor-react-native";
+
+import auth from "@react-native-firebase/auth";
+import { Alert } from "react-native";
 
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
 
+import { Envelope, Key } from "phosphor-react-native";
 import Logo from "./../assets/logo_primary.svg";
 
 export function SignIn() {
@@ -12,6 +15,11 @@ export function SignIn() {
   const [password, setPassword] = useState("");
 
   const { colors } = useTheme();
+  function handleLogin() {
+    if (!email || !password) {
+      return Alert.alert("Entrar", "Informe e-mail e senha");
+    }
+  }
 
   return (
     <VStack flex={1} alignItems="center" bg="gray.600" px={8} pt={24}>
