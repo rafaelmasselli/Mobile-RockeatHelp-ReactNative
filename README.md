@@ -9,7 +9,7 @@
 
 ## 💻 Projeto
 
-### Iginite Lab - Help React-native
+### Ignite Lab - Help React-native
 
 ## 🚀 Iniciando o projeto
 
